@@ -1,0 +1,25 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: server-client-pod
+  labels:
+    app: server-client
+spec:
+  containers:
+    - name: server-container
+      image: ghcr.io/hyp3r00t/server:latest
+      ports:
+        - containerPort: 5000
+      env:
+        - name: SERVER_HOST
+          value: "0.0.0.0"
+        - name: SERVER_PORT
+          value: "5000"
+
+    - name: client-container
+      image: ghcr.io/hyp3r00t/client:latest
+      env:
+        - name: SERVER_HOST
+          value: "localhost" # Communicate with the server within the same pod
+        - name: SERVER_PORT
+          value: "5000"

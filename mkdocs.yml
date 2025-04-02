@@ -14,74 +14,83 @@ theme:
     text: Inter
     code: Fira Code
   palette:
-  - scheme: Dark_Blue # Palette toggle for dark mode
-    primary: custom
-    accent: custom
-    toggle:
-      icon: material/toggle-switch-off-outline
-      name: Prepare for Flashbang!
-  - scheme: Light_Blue # Palette toggle for light mode
-    primary: custom
-    accent: custom
-    toggle:
-      icon: material/toggle-switch
-      name: Join the dark side. We have cookies.
+    - scheme: Dark_Blue # Palette toggle for dark mode
+      primary: custom
+      accent: custom
+      toggle:
+        icon: material/toggle-switch-off-outline
+        name: Prepare for Flashbang!
+    - scheme: Light_Blue # Palette toggle for light mode
+      primary: custom
+      accent: custom
+      toggle:
+        icon: material/toggle-switch
+        name: Join the dark side. We have cookies.
 
   features:
-  - content.action.edit
-  - content.action.view
-  - search.suggest
-  - search.share
-  - navigation.instant
-  - navigation.instant.progress
-  - navigation.tracking
-  - navigation.tabs
-  - navigation.sections
-  - navigation.path
-  - navigation.prune
-  - navigation.indexes
-  - navigation.top
-  - content.code.copy
+    - content.action.edit
+    - content.action.view
+    - search.suggest
+    - search.share
+    - navigation.instant
+    - navigation.instant.progress
+    - navigation.tracking
+    - navigation.sections
+    - navigation.path
+    - navigation.prune
+    - navigation.indexes
+    - navigation.top
+    - navigation.footer
+    - content.code.copy
 
 plugins:
-- search
+  - search
 
 markdown_extensions:
-- abbr
-- admonition
-- attr_list
-- md_in_html
-- pymdownx.emoji:
-    emoji_index: !!python/name:material.extensions.emoji.twemoji ""
-    emoji_generator: !!python/name:material.extensions.emoji.to_svg ""
-- pymdownx.highlight:
-    anchor_linenums: true
-    line_spans: __span
-    pygments_lang_class: true
-- pymdownx.inlinehilite
-- pymdownx.snippets
-- pymdownx.superfences:
-    custom_fences:
-    - name: mermaid
-      class: mermaid
-      format: !!python/name:pymdownx.superfences.fence_code_format ""
-- pymdownx.caret
-- pymdownx.mark
-- pymdownx.tilde
-- pymdownx.tasklist:
-    custom_checkbox: true
-- toc:
-    permalink: true
+  - abbr
+  - admonition
+  - attr_list
+  - md_in_html
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji ""
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg ""
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format ""
+  - pymdownx.caret
+  - pymdownx.mark
+  - pymdownx.tilde
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - toc:
+      permalink: true
 
 extra:
   generator: false
   social:
-  - icon: fontawesome/brands/github
-    link: https://github.com/HYP3R00T
-  - icon: fontawesome/brands/linkedin
-    link: https://www.linkedin.com/in/rajesh-kumar-das/
-  - icon: fontawesome/brands/x-twitter
-    link: https://twitter.com/HYP3R00T
+    - icon: fontawesome/brands/github
+      link: https://github.com/HYP3R00T
+    - icon: fontawesome/brands/linkedin
+      link: https://www.linkedin.com/in/rajesh-kumar-das/
+    - icon: fontawesome/brands/x-twitter
+      link: https://twitter.com/HYP3R00T
 
 extra_css:
-- stylesheets/extra.css
+  - stylesheets/extra.css
+
+nav:
+  - Home: index.md
+  - Getting started:
+      - getting-started/index.md
+      - Problem Statement: getting-started/problem_statement.md
+  - Tasks:
+      - tasks/index.md
+      - Level 1: tasks/level1.md

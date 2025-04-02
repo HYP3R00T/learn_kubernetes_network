@@ -25,7 +25,7 @@ I have two machines.
         - `k3s`: Kubernetes cluster
         - `docker`
 
-Both of these machines are in the same LAN (Local Area Network). 
+Both of these machines are in the same LAN (Local Area Network).
 
 ## Hardware Requirements
 

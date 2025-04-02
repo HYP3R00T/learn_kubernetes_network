@@ -22,9 +22,7 @@ Also ensure `kubectl` is installed as it will be the primary command-line tool t
 kubectl version
 ```
 
-## A bit of Story
-
-To understand networking, all we need is two apps: a server app and a client app. For that, I have created two images (read more about them in [Protagonists](./Protagonists.md)).
+To understand networking, all we need, for now, is two apps: a server app and a client app. For that, I have created two images (read more about them in [here](./Images.md)).
 
 ## Smoke Test
 
@@ -55,7 +53,7 @@ docker run --rm -it \
   ghcr.io/hyp3r00t/client:latest
 ```
 
-You need to add your HOST and PORT numbers. 
+You need to add your HOST and PORT numbers.
 
 **Find host number:**
 
